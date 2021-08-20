@@ -1,0 +1,16 @@
+int main(void){
+	
+	float h, r, A, V;
+	float pi=3.141592;
+	
+	printf("VOLUMEN DE UN CILINDRO\n   Introduzca el valor de la altura:\n");
+	scanf("%f", &h);
+	printf("Introduzca el valor del radio de la base\n");
+	scanf("%f", &r);
+	A=pi*(pow(r, 2));
+	V=A*h;
+	printf("El volumen del cilindro es %f\n", V);
+	
+	return 0;
+	
+}
