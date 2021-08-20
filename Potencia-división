@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <math.h>
+ 
+int main(void) {
+	int a, e, po, div;
+	printf("Indica el numero base: \n");
+	scanf("%d", &a);
+	printf("Indica el exponente al que desea elevar la base: \n");
+	scanf("%d", &e);
+	po=pow(a, e);
+	printf("\n El resultado de la potencia es: %d ", po, a, e);
+	div=(a/e);
+	printf("\n El resultado de dividir la base entre el exponencial es: %d ", div, a, e);
+	return 0;
+}
