@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+
+int main (void) {
+	int a, b, sum, dif, mul;
+	
+	printf("Dame un número \n");
+	scanf("%d", &a);
+	printf("Indicame un segundo nùmero \n");
+	scanf("%d", &b);
+	sum=a+b;
+	printf("\nLa suma de los números es: %d", sum);
+	dif=a-b;
+	printf("\nLa diferencia de lso dos nùmeros es : %d", dif);
+	mul=a*b;
+	printf("\nLa multiplicación de los dos números es: %d", mul);
+	return 0;
+	
+	
+}
