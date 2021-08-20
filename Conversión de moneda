@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void){
+	int e, mul;
+	
+	printf("CONVERSION DE EUROS A PESO MEXICANO\n Ingrese la cantidad de euros: \n");
+	scanf("%d", &e);
+	mul=e*23.34;
+	printf("\n%d Euros equivalen a %d pesos mexicanos", e, mul);
+	
+	return 0;
+	
+}
