@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main (void) {
+	
+	int arr[30]={28,29,17,21,18,20,24,19,15,24,19,14,21,16,28,24,17,18,21,18,20,24,19,15,24,19,14,21,16,20};
+	int i, sum;
+	float mean;
+	
+	
+	for(i=1;i<31;i++){
+		sum=sum+arr[i];
+		mean=sum/30;
+	}
+		printf("La media de las temperaturas del mes es %f \n", mean);
+	return 0;
+}
