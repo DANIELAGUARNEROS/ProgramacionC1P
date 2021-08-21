@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void){
+	int cm, inch;
+	
+	printf("CONVERTIR DE centimetros A pulgadas\n Ingrese los centimetros: \n");
+	scanf("%d", &cm);
+	inch=cm*0.393701;
+	printf("%d centimetros equivale a %d pulgadas", cm, inch);
+	
+	return 0;
+}
