@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+
+int main (void) {
+	
+	int arr[7]={10, 12, 13, 15, 19, 21, 22};
+	int i, sum;
+	float mean, diferencia, cuadrado, total, varianza, devest;
+	
+	for (i=0;i<7;i++){
+		sum=sum+arr[i];
+		mean=sum/11;
+	}
+	
+	for (i=0; i<7; i++){
+		 diferencia=arr[i]-mean;
+		 cuadrado=diferencia*diferencia;
+		 total=total+cuadrado;
+		
+	}
+	varianza=total/11;
+	devest= sqrt(varianza);
+	
+	printf("Temperatura a la misma hora en 7 dias\n La varianza es: %.4f \n La desviacion estandar es: %.4f", varianza, devest);
+	
+	return 0;
+}
