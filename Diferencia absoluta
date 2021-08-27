@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void){
+	int num1, num2, dif;
+	
+	printf("Dame el primer número: ");
+	scanf("%d", &num1);
+	printf("Dame el segundo número: ");
+	scanf ("%d", &num2);
+	
+	
+	if (num1>num2)
+		dif=num1-num2;
+	else
+	dif=num2-num1;
+	
+	printf("La diferencia absoluta de los 2 valores es: %d", dif);
+	
+	return 0;
+}
