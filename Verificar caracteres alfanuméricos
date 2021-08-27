@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int detectar (char dato)
+{
+	if ((dato>='a'&& dato<='z')||(dato>='A'&& dato<='Z'))
+	return 1; else return 0;
+	
+}
+int main (void){
+	
+	char dato;
+	printf("Escribe el caracter: ");
+	scanf("%c", &dato);
+	if(detectar(dato))
+		printf("el caracter que tecleaste cumple y se trata de una letra o de un guion bajo");
+	else 
+		printf("el caracter que tecleaste NO CUMPLE y NO se trata de una letra o de un guion bajo");
+	return 0;
+}
