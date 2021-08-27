@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void){
+	int peso_mxn, moneda;
+	float total;
+	
+	printf("Ingrese la cantidad en peso mexicano que desea convertir: \n");
+	scanf("%d", &peso_mxn);
+	printf("Indica la moneda a la que quieres convertir:\n 1. Euro\n 2. Dolar\n 3. Yen\n 4. Rublo\n 5. Bolivar venezolano\n 6. Franco suizo\n");
+	scanf("%d", &moneda);
+	
+	total=0;
+	switch(moneda){
+		case 1:
+			total=peso_mxn*0.042;
+			break;
+		case 2:
+			total=peso_mxn*0.049;
+			break;
+		case 3:
+			total=peso_mxn*5.41;
+			break;
+		case 4:
+			total=peso_mxn*3.65;
+			break;
+		case 5:
+			total=peso_mxn*200446.60;
+			break;
+		case 6:
+			total=peso_mxn*0.045;
+			break;
+		default:
+			printf("Operacion invalida");	
+	}
+	
+	printf("%d pesos mexicanos equivalen a %f en la moneda que elegiste", peso_mxn, total);
+	return 0;
+}
