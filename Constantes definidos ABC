@@ -21,9 +21,9 @@ int main(void){
 	}
 	{
 	if (B!=C)
- 		printf("   %d es diferente de %d\n", B, C);
+ 		printf("  %d es diferente de %d\n", B, C);
  	else 
-	 	printf("   %d es igual que %d\n", B, C);
+	 	printf("  %d es igual que %d\n", B, C);
 	}
 	{
 	if (A==3)
