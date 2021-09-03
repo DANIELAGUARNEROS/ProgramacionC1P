@@ -1,0 +1,68 @@
+// Daniela Guarneros Ortiz
+// 01.Septiembre.2021
+#include <stdio.h>
+
+//// Pida al usuario tres variables de tipo entero para determinar si se cumplen las condiciones
+
+int main(void){
+	int A, B, C;
+	
+	printf("Indique el valor de A: \n");
+	scanf("%d", &A);
+	printf("Indique el valor de B: \n");
+	scanf("%d", &B);
+	printf("Indique el valor de C: \n");
+	scanf("%d", &C);	
+	
+	{
+	if (A>3)
+		printf("   %d es mayor que 3\n", A);
+	else
+		printf("   %d es menor que 3\n", A);
+    }
+    {
+ 	if (A>C)
+ 		printf("   %d es mayor que %d\n", A, C);
+ 	else 
+	 	printf("   %d es menor que %d\n", A, C);
+	}
+	{
+	if (B!=C)
+ 		printf("   %d es diferente de %d\n", B, C);
+ 	else 
+	 	printf("   %d es igual que %d\n", B, C);
+	}
+	{
+	if (A==3)
+ 		printf("   %d es igual a 3\n", A);
+ 	else 
+	 	printf("   %d no es igual a 3\n", A);
+	}
+	{
+	if (A*B==15)
+ 		printf(" La multiplicacion de %d*%d es igual a 15\n", A, B);
+ 	else 
+	 	printf(" La multiplicacion de %d*%d no es igual a 15\n", A, B);
+	}
+	{
+	if (C/B<A)
+ 		printf(" El resultado de la division %d/%d es menor que %d\n", C, B, A);
+ 	else 
+	 	printf(" El resultado de la division %d/%d es mayor que %d\n", C, B, A);
+	}
+	{
+	if (C/B==-10)
+ 		printf(" El resultado de la division %d/%d es igual a -10\n", C, B );
+ 	else 
+	 	printf(" El resultado de la division %d/%d no es igual a -10\n", C, B);
+	}
+	{
+	if (A+B+C==5)
+ 		printf(" La suma de %d+%d+%d es igual a 5\n", A,  B, C);
+ 	else 
+	 	printf(" La suma de %d+%d+%d no es igual a 5\n", A,  B, C);
+	}
+	
+	
+return 0;
+}
