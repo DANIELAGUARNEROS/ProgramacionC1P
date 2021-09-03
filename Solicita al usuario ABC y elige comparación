@@ -1,0 +1,78 @@
+// Daniela Guarneros Ortiz
+// 01.Septiembre.2021
+#include <stdio.h>
+
+// Pida al usuario tres variables de tipo entero y determine si cumplen las condiciones (swtich-case)
+
+int main(void){
+	int A, B, C, op;
+	
+	printf("Indica el valor de A\n");
+	scanf("%d", &A);
+	printf("Indica el valor de B\n");
+	scanf("%d", &B);
+	printf("Indica el valor de C\n");
+	scanf("%d", &C);
+	
+	printf("Indica la operación que deseas comprobar:\n 1. A>3\n 2. A>C\n 3. B!=C\n 4. A==3\n 5. A*B==15\n 6. C/B<A\n 7. C/B==-10\n 8. A+B+C==5\n");
+	scanf("%d", &op);
+	
+	switch(op)
+	{
+	case 1:	
+		if (A>3)
+		printf("%d es mayor que 3\n", A);
+		else
+		printf("%d es menor que 3\n", A);	
+		break;
+	case 2:
+ 		if (A>C)
+ 			printf("%d es mayor que %d\n", A, C);
+ 		else 
+	 		printf("%d es menor que %d\n", A, C);
+		break;	
+	case 3:
+		if (B!=C)
+ 			printf("%d es diferente de %d\n", B, C);
+ 		else 
+	 		printf("%d es igual que %d\n", B, C);
+		break;	
+	case 4:
+		if (A==3)
+ 			printf("%d es igual a 3\n", A);
+ 		else 
+	 		printf("%d no es igual a 3\n", A);
+		break;
+		
+	case 5:
+		if (A*B==15)
+ 			printf("La multiplicacion de %d*%d es igual a 15\n", A, B);
+ 		else 
+	 		printf("La multiplicacion de %d*%d no es igual a 15\n", A, B);
+		break;
+		
+	case 6:
+		if (C/B<A)
+ 			printf("El resultado de la division %d/%d es menor que %d\n", C, B, A);
+ 		else 
+	 		printf("El resultado de la division %d/%d es mayor que %d\n", C, B, A);
+		break;
+	case 7:
+		if (C/B==-10)
+ 		printf("El resultado de la division %d/%d es igual a -10\n", C, B );
+ 	else 
+	 	printf("El resultado de la division %d/%d no es igual a -10\n", C, B);
+		break;
+		
+	case 8:
+		if (A+B+C==5)
+ 		printf("La suma de %d+%d+%d es igual a 5\n", A,  B, C);
+ 	else 
+	 	printf("La suma de %d+%d+%d no es igual a 5\n", A,  B, C);
+		break;						
+	default:
+			printf("Operacion invalida");
+    }
+	
+return 0;
+}
