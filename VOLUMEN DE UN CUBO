@@ -1,0 +1,15 @@
+// Examen primer parcial
+// Guarneros Ortiz Daniela
+
+#include <stdio.h>
+int main(void){
+	int lado, volumen;
+	
+	printf("Calcular el volumen\n Ingresa la medida de un lado del cubo: ");
+	scanf("%d", &lado);
+	volumen=(lado*lado*lado);
+
+	printf("El volumen del cubo es: %d", volumen);
+	
+	return 0;
+}
