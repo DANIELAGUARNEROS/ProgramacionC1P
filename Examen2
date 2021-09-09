@@ -1,0 +1,47 @@
+//Examen Primer parcial
+//Guarneros Ortiz Daniela
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main(void){
+	
+	float arreglo[20]={3.3, 4.5, 5.0, 3.4, 4.2, 5.3, 3.2, 4.3, 5.2, 7.1, 3.3, 4.8, 5.2};
+	int i;
+	
+	if(3.5>arreglo[i]){
+		printf("Imperceptible\n");
+		
+	}
+	else(3.5>arreglo[i]>5.4);{
+		printf("Sin problemas, avisar\n");
+	}
+	
+	if(5.5<arreglo[i]<6.0){
+		printf("Emitir alerta");
+	}
+	else{
+		printf("\nDesalojar");
+	}
+	if(6.1<arreglo[i]<6.9){
+		printf("\nEmitir alerta");
+	}
+	else{
+		printf("\nEnviar equipos de apoyo");
+	}
+	if(7.0<arreglo[i]<7.9){
+		printf("\nEmitir alerta");
+	}
+	else{
+		printf("\nEnviar equipos de rescate");
+	}
+	if(arreglo[i]>8.0){
+		printf("\nEmergencia nacional");
+	}
+	else{
+		printf("\nSolicitar apoyo externo");
+	}
+	
+	return 0;
+}
