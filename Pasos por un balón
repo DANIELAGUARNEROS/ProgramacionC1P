@@ -1,0 +1,21 @@
+//  Daniela Guarnero Ortiz
+// 08.Septiembre.2021
+//  Los pasos entre un muñeco y la pelota, pasos aleatorios
+
+#include <stdio.h>
+#include <stdlib.h> 
+
+int main(void){
+	int i, pasos;
+	
+	printf("Indica la distancia entre la persona y la pelota\n");
+	scanf("%d", &a);
+	printf("(*-*): objetivo a %d pasos \n", pasos);
+	printf("(*-*)");
+	for (i=0; i<pasos; i++)
+	{ 
+		printf("ñ");
+	}
+	printf("(O)\n");
+	return 0;
+}
